@@ -91,10 +91,8 @@ voting_clf = VotingClassifier(estimators=[
     ("rf", rf),
     ("knn", knn)], voting="soft")
 
-# Model eğitimi
 voting_clf.fit(X_train_transformed, y_train)
 
-# Test verisi ile tahmin yap
 y_pred = voting_clf.predict(X_test_transformed)
 
 print("Accuracy: ", accuracy_score(y_test, y_pred))
