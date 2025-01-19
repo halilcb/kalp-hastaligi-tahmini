@@ -111,18 +111,3 @@ plt.title("Confusion Matrix")
 plt.xlabel("Predicted Label")
 plt.ylabel("True Label")
 plt.show()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
